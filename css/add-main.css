@@ -1,0 +1,78 @@
+.trigers{
+	background: url(../img/main-page/trigers-fon.png) no-repeat;
+	height: 890px;
+	background-size: cover;
+	overflow: hidden;
+}
+.title-section-trigers {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 155px;
+}
+.main-info-section-top{
+	margin: 40px 0 0 0;
+}
+.triger-img{
+	margin: 0 auto 10px auto;
+    display: block;
+}
+.triger-1{
+  margin-top: 70px;
+}
+.triger-2{
+  margin-top: 158px;
+}
+.triger-text{
+	text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+.trapezoid {
+	margin-top: 30px;
+	border-bottom: 160px solid #0076a8;
+	border-left: 45px solid transparent;
+	/*border-right: 50px solid transparent;*/
+	height: 0;
+	width: 100%;
+}
+.trapezoid-text{
+	max-width: 610px;
+	color: white;
+	line-height: 30px;
+	text-align: center;
+	padding: 35px;
+}
+@media  (max-width: 991px)  {
+	.trigers{
+		height: auto;
+	}
+}
+@media  (max-width: 575px)  {
+ .title-section-trigers {
+     font-size: 18px;
+ }
+.triger-1,.triger-2{
+  margin-top: 44px;
+}
+/*.trigers{
+	height: 1125px;
+}*/
+.trapezoid {
+	border-bottom: 200px solid #0076a8;
+}
+.trapezoid-text{
+	line-height: 24px;
+	padding: 15px;
+}
+}	
+@media (min-width: 575px) and (max-width: 992px) {
+/*.trigers{
+	height: 825px;
+}*/
+.triger-1,.triger-2{
+  margin-top: 44px;
+}
+}

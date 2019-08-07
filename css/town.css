@@ -1,0 +1,81 @@
+.title-town {
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	color: #5a5a5a;
+	margin: 35px 0;
+}
+
+
+.letter-list {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	padding: 0 30px;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.letter-list__item {
+	width: 40px;
+	height: 50px;
+}
+
+.letter-list__link {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #000;
+	text-decoration: underline!important;
+}
+
+.town-list {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	position: relative;
+}
+
+.town-list:before {
+	content: "";
+	height: 5px;
+	width: calc(100% + 60px);
+	position: absolute;
+	top: 0px;
+	left: -30px;
+	background-color: #ededed;
+}
+
+.town-list__link {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	color: #000;
+}
+
+.town-list__img {
+	height: 60px;
+	width: 50px;
+	margin-right: 30px;
+}
+
+.town-list__letter {
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 992px) { 
+	.town-list:before {
+		width: calc(100% - 10px);
+		left: 5px;
+	}
+}

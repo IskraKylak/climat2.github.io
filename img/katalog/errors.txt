@@ -1,0 +1,7 @@
+[2019-07-26 10:30:18] layer "info@climate-1.ru": Unsupported extension: ru
+[2019-07-26 10:30:18] layer "+7 (495) 199-14-91": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2019-07-26 10:30:18] layer "+7 (499) 110-15-59": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2019-07-26 10:30:18] layer "phone-volume_icon-icons.com_56474": Expected end of input but "_" found.
+[2019-07-26 10:30:18] layer "+7-(495) 199-14-91": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2019-07-26 10:30:18] layer "+7-(499) 110-15-59": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2019-07-26 10:30:18] layer "phone-volume_icon-icons.com_56474 копия": Expected end of input but "_" found.

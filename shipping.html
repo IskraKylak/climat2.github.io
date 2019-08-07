@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Доставка и оплата</title>
+	<!-- Favicon -->
+	<link rel="icon" href="img/favicon.PNG" type="image/x-icon">
+
+	<!-- Slick CSS -->
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+
+	<!-- Bootstrap Reboot CSS -->
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	
+	<!-- Main arcticmodal -->
+	<link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css">
+	
+	<!-- Font Awesome -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+	<!-- FontAwesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+	<link rel="stylesheet" href="fonts/raleway/raleway.css">
+	<link rel="stylesheet" href="fonts/opensans/opensans.css">
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/aprelevka.css">
+	<link rel="stylesheet" href="css/town.css">
+	<link rel="stylesheet" href="css/catalog.css">
+	<link rel="stylesheet" href="css/shipping.css">
+	<!-- Media Queries CSS -->
+	<link rel="stylesheet" href="css/media.css">
+
+	<!-- fancybox -->
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+	<!-- tabs -->
+
+	<!-- Main arcticmodal -->
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+	<!-- FontFamily -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+</head>
+<body>
+	<!-- Прелоадер -->
+	<div id="page-preloader" class="cssload-wrap">
+		<div class="loader">
+		  <div class="ball"></div>
+		  <div class="ball"></div>
+		  <div class="ball"></div>
+		</div>
+	</div>
+	<!-- 1 экран -->
+	<header class="header" id="header">
+		<div class="top-header-background">
+			<div class="container">
+				<div class="top-header">
+					<p class="time">
+						<i class="clock-icon"></i>
+						 Время работы: Пн-Пт: 9:00 - 20:00, Сб-Вс: 10:00 - 18:00
+					</p>
+					<form action="#" class="search">
+						<input type="text" class="search__input" placeholder="Поиск по названию или артиклу">
+						<button class="search__btn">
+							
+						</button>
+					</form>
+					<div class="order-block">
+						<button class="order">
+							Заказать бесплатный осмотр
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content-header-background">
+			<div class="container">
+				<div class="content-header">
+					
+					<div class="logo-wrap">
+						<div class="wrap-burger-logo">
+							<div class="burger-menu">
+								<i class="burger-menu__icon"></i>
+							</div>
+							<a href="#" class="logo"></a>
+						</div>
+						<p class="logo-text">
+							<span>
+								Кондиционеры с установкой 
+							</span>
+						</p>
+						<p class="logo-text">
+							в Москве  и Московской области
+						</p>
+					</div>
+					<div class="wrap-phone mobile-burger-content">
+						<div class="phone-block">
+							<a href="#" class="phone-link">
+								<span>
+									+7 (495) 
+								</span>
+								199-14-91
+							</a>
+							<a href="#" class="phone-link">
+								<span>
+									+7 (495) 
+								</span>
+								110-15-59
+							</a>
+						</div>
+						<div class="wrap-soc">
+							<p class="text-soc">
+								Мы в социальных сетях:
+							</p>
+							<div class="soc-icons">
+								<a href="#" class="soc-icon soc-icon-vk"></a>
+								<a href="#" class="soc-icon soc-icon-fb"></a>
+								<a href="#" class="soc-icon soc-icon-lk"></a>
+							</div>
+						</div>
+						<a href="#" class="burger-adress burger-content">
+							<i class="burger-adress__icon"></i>
+							г. Москва, ул. Коптевская, <br>
+							д. 67, БЦ "Таволга"
+						</a>
+						<div class="order-block-burger burger-content">
+							<button class="order">
+								Заказать бесплатный осмотр
+							</button>
+						</div>
+					</div>
+					<div class="basket-wrap">
+						<div class="basket-block">
+							<a href="#" class="basket-link">
+								<i class="basket-icon"></i>
+								ваша корзина
+							</a>
+							<p class="basket-text">
+								В корзине 
+								<span>
+									(0)
+								</span>
+								товаров
+								<span>
+									(0)
+								</span>
+								<span class="rub">
+									&#8381;
+								</span>
+							</p>
+						</div>
+						<a href="#" class="email-link">
+							<i class="email-icon">
+							</i>
+							info@climate-1.ru
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="backgrond-window_first"></div>
+		<div class="menu-header-background">
+			<div class="container">
+				<ul class="list-menu">
+					<li class="list-menu__item">
+						<a href="#" class="list-menu__link">
+							<img src="img/main-page/icon-menu1.png" alt="" class="list-menu__image img-fluid">
+							<p class="list-menu__text">
+								Установка и монтаж
+							</p>
+						</a>
+					</li>
+					<li class="list-menu__item">
+						<a href="#" class="list-menu__link">
+							<img src="img/main-page/icon-menu2.png" alt="" class="list-menu__image img-fluid">
+							<p class="list-menu__text">
+								ФОТО НАШИХ МОНТАЖЕЙ
+							</p>
+						</a>
+					</li>
+					<li class="list-menu__item">
+						<a href="#" class="list-menu__link">
+							<img src="img/main-page/icon-menu3.png" alt="" class="list-menu__image img-fluid">
+							<p class="list-menu__text">
+								ОПЛАТА И ДОСТАВКА
+							</p>
+						</a>
+					</li>
+					<li class="list-menu__item">
+						<a href="#" class="list-menu__link">
+							<img src="img/main-page/icon-menu4.png" alt="" class="list-menu__image img-fluid">
+							<p class="list-menu__text">
+								КОНТАКТЫ
+							</p>
+						</a>
+					</li>
+					<li class="list-menu__item">
+						<a href="#" class="list-menu__link">
+							<img src="img/main-page/icon-menu5.png" alt="" class="list-menu__image img-fluid">
+							<p class="list-menu__text">
+								Отзывы
+							</p>
+						</a>
+					</li>
+					<li class="list-menu__item">
+						<a href="#" class="list-menu__link">
+							<img src="img/main-page/icon-menu6.png" alt="" class="list-menu__image img-fluid">
+							<p class="list-menu__text">
+								Кондиционеры оптом
+							</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="orange-menu-backhround">
+				<div class="container">
+					<ul class="orange-menu">
+						<li class="orange-menu__tab">
+							Посмотреть каталог
+							<i class="orange-menu__icon orange-menu__icon_tab"></i>
+						</li>
+						<li class="orange-menu__item">
+							<a href="" class="orange-menu__link">
+								<i class="orange-menu__icon orange-menu__icon_kon"></i>
+								КОНДИЦИОНЕРЫ
+							</a>
+						</li>
+						<li class="orange-menu__item">
+							<a href="" class="orange-menu__link">
+								<i class="orange-menu__icon orange-menu__icon_ot"></i>
+								ОТОПИТЕЛЬНОЕ ОБОРУДОВАНИЕ
+							</a>
+						</li>
+						<li class="orange-menu__item">
+							<a href="" class="orange-menu__link">
+								<i class="orange-menu__icon
+								orange-menu__icon_vh"></i>
+								воздух
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="backgrond-window_second"></div>
+	</header>
+<!--------- section-apr ------------------>
+	<section class="section-title-page section-title-page_apr">
+		<div class="container">
+			<div class="block-title-page">
+				<h2 class="title-page">
+					Доставка и оплата
+				</h2>
+				<div class="breadcrumbs">
+					<ul class="breadcrumbs-list">
+						<li class="breadcrumbs-list__item">
+							<a href="#" class="breadcrumbs-list__link">
+								Главная страница
+							</a>
+						</li>
+						<li class="breadcrumbs-list__item">
+							<a href="#" class="breadcrumbs-list__link">
+								Кондиционеры 
+							</a>
+						</li>
+						<li class="breadcrumbs-list__item">
+							Настенные Сплит-системы
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-shipping">
+		<div class="container">
+			<div class="shipping-content">
+			   <h3 class="title-other">
+					Как приобрести 
+	 				<span>
+	 					оборудование?
+	 				</span>
+				</h3>
+				<p class="shipping-text">
+					Вы можете приобрести климатическое оборудование в нашем интернет-магазине, обратившись по телефону: <span> +7 (495) 199 14 91</span> Наши специалисты с радостью помогут Вам сделать правильный выбор.
+				</p>
+				<h3 class="title-other">
+					Условия доставки кондиционера
+	 				<span>
+	 					кондиционера
+	 				</span>
+				</h3>
+				<p class="shipping-text">
+					Вы можете купить кондиционер вместе с монтажом, а также без монтажа, воспользовавшись только услугой доставки. В обоих случаях действуют следующие условия:
+				</p>
+				<p class="shipping-text">
+					Доставкa одного кондиционера в пределах МКАД осуществляется за 500 рублей, доставка второго и каждого последующего оборудования стоит 200 рублей. При доставке по Московской Области и за пределы МКАДа стоимость каждого дополнительного километра составляет 30 рублей. При объемном заказе цены пересматриваются руководством. 
+				</p>	
+				<p class="shipping-text">
+					Сроки доставки определяются согласно взаимной договоренности, в зависимости от наличия товара на складе и требований покупателя.
+				</p>
+				<h3 class="title-other">
+					Условия доставки 
+	 				<span>
+	 					отопительного оборудования
+	 				</span>
+				</h3>
+				<p class="shipping-text">
+					Малогабаритные - <span>300 рублей</span> в пределах МКАД (за пределами - 20 руб./км)
+				</p>
+				<p class="shipping-text">
+					Крупногабаритные - <span>500 рублей</span> в пределах МКАД (за пределами - 30 руб./км)
+				</p>
+				<h3 class="title-other">
+					Как производится 
+	 				<span>
+	 					оплата?
+	 				</span>
+				</h3>
+				<p class="shipping-text">
+					Оплату производите на месте по факту доставки или установки оборудования, после выдачи необходимых документов. Действует также безналичный расчет на основании договора. Есть возможность оплаты картой.
+				</p>
+				<p class="shipping-text">
+					<span>
+						Наличный расчёт
+					</span>
+				</p>
+				<p class="shipping-text">
+					Вы можете оплатить заказ наличными курьеру при его получении или в пункте самовывоза.  
+					При получении товара обязательно проверьте комплектацию заказа, наличие гарантийного талона, чека или приходно-кассового ордера.
+				</p>
+				<p class="shipping-text">
+					<span>
+						Безналичный расчёт
+					</span>
+				</p>
+				<p class="shipping-text">
+					После оформления заказа будет сформирован счёт на оплату, который Вы можете распечатать и оплатить. День выполнения работ назначается сразу при поступлении денежных средств на наш расчетный счет или при предоставлении исполненного платежного поручения. <br>  
+					Оплата заказов клиентами - юридическими лицами возможна только по безналичному расчёту. <br>  
+					Все необходимые для бухгалтерии документы (оригинал счёта на оплату, счёт-фактура, накладная) выдаются вместе с заказом при получении.
+				</p>
+				<p class="shipping-text">
+					<span>
+						Банковские карты
+					</span>
+				</p>
+				<p class="shipping-text">
+					Сервис приёма оплаты предоставлен
+					<span class="shipping-text_blue">
+						PayAnyWay
+					</span>
+					.
+				</p>
+
+				<p class="shipping-text">
+					<span>
+						Банковские карты
+					</span>
+				</p>
+
+				<ul class="shipping-services">
+					<li class="shipping-services__item">
+						<div class="shipping-services__wrpa-img">
+							<img src="img/shipping/mastercard.png" alt="" class="img-fluid shipping-services__img">
+						</div>
+						<div class="shipping-services__blockText">
+							<p class="shipping-services__text">
+								PayAnyWay не передает данные Вашей карты магазину и иным третьим лицам. Безопасность платежей с помощью банковских карт обеспечивается технологиями защищенного соединения HTTPS и двухфакторной аутентификации пользователя 3D Secure.
+							</p>
+							<p class="shipping-services__text">
+								В соответствии с ФЗ «О защите прав потребителей» в случае, если Вам оказана услуга или реализован товар ненадлежащего качества, платеж может быть возвращен на банковскую карту, с которой производилась оплата. Порядок возврата средств уточняйте у администрации интернет-магазина.
+							</p>
+						</div>
+					</li>
+				</ul>
+
+				<p class="shipping-text">
+					<span>
+						Электронные деньги
+					</span>
+				</p>
+
+				<ul class="shipping-services">
+					<li class="shipping-services__item">
+						<div class="shipping-services__wrpa-img">
+							<img src="img/shipping/brend-icon1.png" alt="" class="img-fluid shipping-services__img">
+						</div>
+						<div class="shipping-services__blockText">
+							<p class="shipping-services__text">
+								Монета.Ру<br>
+								Для осуществления оплаты с помощью Монета.Ру вам необходимо иметь кошелек, зарегистрировать который можно на сайте системы.<br>
+								Способы пополнения кошелька можно найти на сайте Монета.Ру в разделе «Как пополнить». Зачисление платежей через Монета.Ру происходит мгновенно.
+							</p>
+						</div>
+					</li>
+					<li class="shipping-services__item">
+						<div class="shipping-services__wrpa-img">
+							<img src="img/shipping/brend-icon2.png" alt="" class="img-fluid shipping-services__img">
+						</div>
+						<div class="shipping-services__blockText">
+							<p class="shipping-services__text">
+								WebMoney<br>   
+								Для совершения оплаты вы должны быть зарегистрированы в системе WebMoney Transfer. К оплате принимаются титульные знаки WMR, зачисление денег происходит мгновенно.
+							</p>
+						</div>
+					</li>
+					<li class="shipping-services__item">
+						<div class="shipping-services__wrpa-img">
+							<img src="img/shipping/brend-icon3.png" alt="" class="img-fluid shipping-services__img">
+						</div>
+						<div class="shipping-services__blockText">
+							<p class="shipping-services__text">
+								Яндекс.Деньги<br>  
+								Для осуществления оплаты с помощью сервиса Яндекс.Деньги вам необходимо иметь кошелек, зарегистрированный на сайте системы.<br> 
+								Зачисление платежей через сервис Яндекс.Деньги происходит мгновенно.
+							</p>
+						</div>
+					</li>
+					<li class="shipping-services__item">
+						<div class="shipping-services__wrpa-img">
+							<img src="img/shipping/brend-icon5.png" alt="" class="img-fluid shipping-services__img">
+						</div>
+						<div class="shipping-services__blockText">
+							<p class="shipping-services__text">
+								QIWI Кошелек<br>   
+								Выберите в качестве оплаты QIWI Кошелёк и введите номер своего сотового телефона. Оплатите созданный автоматически счёт на сайте сервиса.<br>   
+								Если у вас нет QIWI Кошелька, вам необходимо зарегистрировать его на сайте сервиса или в любом из приложений QIWI Кошелька.
+							</p>
+						</div>
+					</li>
+				</ul>
+
+				<p class="shipping-text">
+					<span>
+						Банковские сервисы
+					</span>
+				</p>
+
+				<p class="shipping-text">
+					Системы онлайн-банкинга «Сбербанк ОнЛ@йн», «Альфа-Клик», «Промсвязьбанк», «Русский Стандарт», «Faktura.ru». <br>  
+					Банковским или почтовым переводом, а также через систему денежных переводов «CONTACT».
+				</p>
+				<div class="wrap-bank-services">
+					<img src="img/shipping/bank.png" alt="img" class="bank-services img-fluid">
+				</div>
+
+				<p class="shipping-text">
+					<span>
+						Платёжные терминалы
+					</span>
+				</p>
+				
+				<p class="shipping-text">
+					Элекснет, ОПЛАТА.РУ, Федеральная система Город, Московский кредитный банк, Форвард Мобайл, НКО «ЛИДЕР».
+				</p>
+				<div class="wrap-bank-services">
+					<img src="img/shipping/terminal.png" alt="img" class="bank-services img-fluid">
+				</div>
+
+				<p class="shipping-text">
+					<span>
+						SMS сервисы
+					</span>
+				</p>
+				
+				<p class="shipping-text">
+					Сотовые операторы Мегафон, МТС, Beeline, Tele2
+				</p>
+				<div class="wrap-sms-services">
+					<div class="wrap-sms-services__block-img">
+						<img src="img/shipping/beeline.png" alt="img" class="bank-services img-fluid">
+					</div>
+					<div class="wrap-sms-services__block-img">
+						<img src="img/shipping/megafon.png" alt="img" class="bank-services img-fluid">
+					</div>
+					<div class="wrap-sms-services__block-img">
+						<img src="img/shipping/mts.png" alt="img" class="bank-services img-fluid">
+					</div>
+					<div class="wrap-sms-services__block-img">
+						<img src="img/shipping/tele2.png" alt="img" class="bank-services img-fluid">
+					</div>
+				</div>
+				
+				<p class="shipping-text">
+					<span>
+						Возникли вопросы по оплате?
+					</span>
+				</p>
+				<p class="shipping-text">
+					Воспользуйтесь  
+					<a href="#" class="shipping-text_blue">
+						подробными инструкциями
+					</a>
+					по каждому из способов оплаты или свяжитесь с нами.
+				</p>
+				
+				<p class="shipping-text">
+					<span>
+						Служба поддержки покупателей PayAnyWay
+					</span>
+				</p>
+				
+				<div class="wrap-bank-services">
+					<img src="img/shipping/terminal.png" alt="img" class="bank-services img-fluid">
+				</div>
+			
+				<p class="shipping-text">
+					Телефон: +7 (495) 743-49-85 <br> 
+					E-mail: helpdesk.support@payanyway.ru
+				</p>
+
+				<p class="shipping-text">
+					<span class="shipping-text_blue">
+						Договор оферты
+					</span>
+				</p>
+
+				<h3 class="title-other">
+					Возврат
+				</h3>
+				
+				<p class="shipping-text">
+					Если по каким-либо причинам Вы решили отказаться от приобретенного товара, то можете сделать это в соответствии с Законом РФ «О защите прав потребителей» от 07.02.1992 № 2300-1.
+				</p>
+
+				<p class="shipping-text">
+					<span>
+						Возврат товара надлежащего качества.
+					</span>
+				</p>
+
+			    <ul class="list-return">
+			    	<li class="list-return__item">
+			    		Клиент вправе отказаться от заказанного Товара в любое время до его получения, а после получения Товара - в течение 7 (семи) дней, не считая дня покупки.
+			    	</li>
+			    	<li class="list-return__item">
+			    		Возврат Товара надлежащего качества возможен в случае, если сохранены его товарный вид, потребительские свойства, а также документ, подтверждающий факт и условия покупки указанного Товара.
+			    	</li>
+			    	<li class="list-return__item">
+			    		Клиент не вправе отказаться от Товара, имеющего индивидуально-определенные свойства, если указанный Товар может быть использован исключительно приобретающим его Клиентом.
+			    	</li>
+			    	<li class="list-return__item">
+			    		При отказе Клиента от Товара надлежащего качества Продавец должен возвратить ему денежную сумму, уплаченную потребителем по договору, за исключением расходов продавца на доставку от потребителя возвращенного товара, не позднее чем через 10 дней со дня предъявления потребителем соответствующего требования.
+			    	</li>
+			    </ul>
+
+			    <p class="shipping-text">
+					<span>
+						Возврат товара надлежащего качества.
+					</span>
+				</p>
+
+				<p class="shipping-text">
+					Под товаром ненадлежащего качества подразумевается товар, не способный обеспечить свои функциональные качества из-за существенного недостатка (с наличием дефектов/брака).
+				</p>
+
+				<p class="shipping-text">
+					Покупатель, которому продан товар ненадлежащего качества, если это не было оговорено продавцом, вправе по своему выбору заявить любое из нижеперечисленных требований:
+				</p>
+
+				<ul class="list-return">
+			    	<li class="list-return__item">
+			    		замены на товар аналогичной марки (модели, артикула) или на такой же товар другой марки (модели, артикула) с соответствующим перерасчетом покупной цены;
+			    	</li>
+			    	<li class="list-return__item">
+			    		соразмерного уменьшения покупной цены;
+			    	</li>
+			    	<li class="list-return__item">
+			    		безвозмездного устранения недостатков товара или возмещения расходов на их исправление покупателем или третьим лицом;
+			    	</li>
+			    	<li class="list-return__item">
+			    		вправе отказаться от исполнения договора и потребовать возврата уплаченной за товар суммы.
+			    	</li>
+			    </ul>
+
+			    <p class="shipping-text">
+			    	При возврате технически сложного товара ненадлежащего качества (перечень таких товаров утвержден Постановлением Правительства РФ от 10.11.2011 № 924 «Об утверждении перечня технически сложных товаров») Покупатель имеет право потребовать:
+			    </p>
+
+			    <ul class="list-return">
+			    	<li class="list-return__item">
+			    		замены на товар аналогичной марки (модели, артикула) или на такой же товар другой марки (модели, артикула) с соответствующим перерасчетом покупной цены;
+			    	</li>
+			    	<li class="list-return__item">
+			    		отказаться от исполнения договора и потребовать возврата уплаченной за товар суммы.
+			    	</li>
+			    </ul>
+			    <p class="shipping-text">
+			    	Все вышеперечисленные требования по возврату товара ненадлежащего качества могут быть предъявлены в следующие сроки:
+			    </p>
+			    <ul class="list-return">
+			    	<li class="list-return__item">
+			    		На товар установлен гарантийный срок — в течение всего гарантийного срока;
+			    	</li>
+			    	<li class="list-return__item">
+			    		На товар не установлен гарантийный срок — в течение разумного срока, но не более 2 лет.
+			    	</li>
+			    </ul>
+			    <p class="shipping-text">
+			    	Интернет-магазин вправе отказать в обмене или возврате товара, если сочтет, что обнаруженный существенный недостаток является следствием неправильной эксплуатации товара.
+			    </p>
+			    <p class="shipping-text">
+			    	В случае возникновения разногласий по качеству или причинам возникновения недостатков, Интернет-магазин вправе провести независимую экспертизу за свой счет. Покупатель может участвовать в экспертизе и оспорить ее решение в суде. Если в результате экспертизы установлено, что недостатки товара возникли по вине Покупателя, то Покупатель обязан возместить Интернет-магазину стоимость экспертизы, а также связанные с ее проведением расходы на транспортировку и хранение товара.
+			    </p>
+			    <!-- content -->
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="footer-fon">
+			<div class="container">
+				<div class="footer-row">
+					<div class="footer-col">
+						<ul class="footer-list">
+							<li class="footer-list__title">
+								О компаниии
+							</li>
+							<li class="footer-list__item">
+								<a href="#" class="footer-list__link">
+									Наши статьи
+								</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="#" class="footer-list__link">
+									Заказы и возвраты
+								</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="#" class="footer-list__link">
+									Кондиционеры в Московской области
+								</a>
+							</li>
+							<li class="footer-list__item service-d">
+								<a href="#" class="footer-list__link">
+									Доставка и оплата
+								</a>
+							</li>
+						</ul>
+						<ul class="footer-list">
+							<li class="footer-list__title">
+								контакты
+							</li>
+							<li class="footer-list__item">
+								<a href="#" class="footer-list__link">
+									Наши контакты
+								</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="#" class="footer-list__link">
+									Карта сайта
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-col service-n">
+						<ul class="footer-list">
+							<li class="footer-list__title">
+								Обслуживание
+							</li>
+							<li class="footer-list__item">
+								<a href="#" class="footer-list__link">
+									Доставка и оплата
+								</a>
+							</li>
+						</ul>
+						<ul class="footer-list">
+							<li class="footer-list__title">
+								Обслуживание
+							</li>
+							<li class="footer-list__item">
+								<a href="#" class="footer-list__link">
+									Доставка и оплата
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<div class="footer-block">
+							<div class="phone-block phone-block-footer">
+								<a href="#" class="phone-link phone-link-footer">
+									<span>
+										+7 (495) 
+									</span>
+									199-14-91
+								</a>
+								<a href="#" class="phone-link phone-link-footer">
+									<span>
+										+7 (495) 
+									</span>
+									110-15-59
+								</a>
+							</div>
+							<div class="wrap-footer-btn">
+								<button class="footer-btn footer-btn-js-click">
+									заказать звонок
+								</button>
+								<div class="footer-btn-shadow"></div>
+							</div>
+							
+						</div>
+						<div class="footer-block">
+							<a href="#" class="footer-adress">
+								<i class="footer-adress__icon"></i>
+								г. Москва, ул. Коптевская, <br>
+								д. 67, БЦ "Таволга"
+							</a>
+							<div class="wrap-soc wrap-soc-footer">
+								<p class="text-soc text-soc-footer">
+									Мы в социальных сетях:
+								</p>
+								<div class="soc-icons">
+									<a href="#" class="soc-icon soc-icon-vk"></a>
+									<a href="#" class="soc-icon soc-icon-fb"></a>
+									<a href="#" class="soc-icon soc-icon-lk"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="footer-bottom-background">
+				<div class="container">
+					<div class="footer-bottom">
+						<p class="copyright">
+							 2018 Климат №1. Все права защищены.
+						</p>
+						<div class="footer-bottom-links">
+							<a href="#" class="footer-bottom-link">
+								Обратная связь      
+							</a>
+							<p class="separator-main">|</p>
+							<a href="#" class="footer-bottom-link">
+								Заказы и возвраты
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+	</footer>
+	<div id="overlay">
+		<div id="thx">
+			Спасибо! Мы обязательно вам перезвоним
+		</div>
+   	</div>
+
+	<div style="display: none;">
+	    <div class="box-modal-buy" id="exampleModal-buy">
+	        <div class="box-modal_close arcticmodal-close">
+	        </div>
+	        <h4 class="modal-buy-title">
+        		<span>
+        			Купить
+        		</span><br>
+				Royal Clima RC-VT22HN
+        	</h4>
+        	<form action="" class="modal-form">
+				<input type="text" placeholder="Ваш имя" class="modal-form__name">
+				<input type="tel" placeholder="Ваш телефон" class="modal-form__tel">
+				<div class="modal-form__wrap-btn">
+					<button class="modal-form__btn">
+						Заказать звонок
+					</button>
+				</div>
+			</form>
+	    </div>
+	</div>
+
+	<div style="display: none;">
+	    <div class="box-modal-busket" id="box-modal-busket">
+	        <div class="busket-modal_close  arcticmodal-close">
+	        </div>
+        	<div class="modal-busket-content">
+        		<h4 class="modal-busket-title">
+		    		Товар добавлен в корзину
+		    	</h4>
+		    	<div class="modal-busket-info">
+		    		<div class="wrap-img">
+		    			<img src="img/mobile-main-page/modal-img-busket.png" alt="img" class="img-fluid modal-busket-img">
+		    		</div>
+			    	<p class="modal-busket-name">
+			    		Кондиционер настенный
+			    	</p>
+			    	<p class="modal-busket-type">
+						Royal Clima RC-VT22HN
+			    	</p>
+			    	<p class="modal-busket-model">
+						Модельный ряд: VISTA
+			    	</p>
+			    	<p class="modal-busket-old-price">
+			    		14 490 руб.
+			    	</p>
+			    	<p class="modal-busket-price">
+			    		12 200 руб.
+			    	</p>
+			    	<div class="modal-check">
+			    		<label class="custom-radio-second">
+                            <input type="checkbox">
+                            <div></div>
+                        </label>
+			    		<p class="modal-check__text">
+			    			<span>
+			    				Установка
+			    			</span>
+			    			+ 6990 руб.
+			    		</p>
+			    	</div>
+		    	</div>
+        	</div>
+        	<div class="modal-wrap-btn">
+	    		<button class="modal-wrap-btn__busket">
+	    			Перейти в корзину
+	    			<i class="modal-wrap-btn__icon-busket"></i>
+	    		</button>
+	    		<button class="modal-wrap-btn__buy">
+	    			<i class="modal-wrap-btn__icon-buy">
+	    			</i>
+	    			Купить
+	    		</button>
+	    	</div>
+	    </div>
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script src="js/jquery.arcticmodal-0.3.min.js"></script>
+	<script src="js/parallax-bg.js"></script>
+	<script src="js/scripts.js"></script>
+	<script src="js/jquery.fullPage.js"></script>
+	<!-- Табы -->
+	<script src="js/jquery.hashchange.js" type="text/javascript"></script>
+	<script src="js/jquery.easytabs.js" type="text/javascript"></script>
+	
+</body>
+</html>
+

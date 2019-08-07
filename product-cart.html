@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Карточка товара</title>
+	<!-- Favicon -->
+	<link rel="icon" href="img/favicon.PNG" type="image/x-icon">
+
+	<!-- Slick CSS -->
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+
+	<!-- Bootstrap Reboot CSS -->
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	
+	<!-- Main arcticmodal -->
+	<link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css">
+	
+	<!-- Font Awesome -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+	<!-- FontAwesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+	<link rel="stylesheet" href="fonts/raleway/raleway.css">
+	<link rel="stylesheet" href="fonts/opensans/opensans.css">
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/aprelevka.css">
+	<link rel="stylesheet" href="css/town.css">
+	<link rel="stylesheet" href="css/catalog.css">
+	<!-- Media Queries CSS -->
+	<link rel="stylesheet" href="css/media.css">
+
+	<!-- fancybox -->
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+	<!-- tabs -->
+
+	<!-- Main arcticmodal -->
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+	<!-- FontFamily -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+</head>
+<body>
+	<!-- Прелоадер -->
+	<div id="page-preloader" class="cssload-wrap">
+		<div class="loader">
+		  <div class="ball"></div>
+		  <div class="ball"></div>
+		  <div class="ball"></div>
+		</div>
+	</div>
+	<!-- 1 экран -->
+	<header class="header" id="header">
+		<div class="top-header-background">
+			<div class="container">
+				<div class="top-header">
+					<p class="time">
+						<i class="clock-icon"></i>
+						 Время работы: Пн-Пт: 9:00 - 20:00, Сб-Вс: 10:00 - 18:00
+					</p>
+					<form action="#" class="search">
+						<input type="text" class="search__input" placeholder="Поиск по названию или артиклу">
+						<button class="search__btn">
+							
+						</button>
+					</form>
+					<div class="order-block">
+						<button class="order">
+							Заказать бесплатный осмотр
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content-header-background">
+			<div class="container">
+				<div class="content-header">
+					
+					<div class="logo-wrap">
+						<div class="wrap-burger-logo">
+							<div class="burger-menu">
+								<i class="burger-menu__icon"></i>
+							</div>
+							<a href="#" class="logo"></a>
+						</div>
+						<p class="logo-text">
+							<span>
+								Кондиционеры с установкой 
+							</span>
+						</p>
+						<p class="logo-text">
+							в Москве  и Московской области
+						</p>
+					</div>
+					<div class="wrap-phone mobile-burger-content">
+						<div class="phone-block">
+							<a href="#" class="phone-link">
+								<span>
+									+7 (495) 
+								</span>
+								199-14-91
+							</a>
+							<a href="#" class="phone-link">
+								<span>
+									+7 (495) 
+								</span>
+								110-15-59
+							</a>
+						</div>
+						<div class="wrap-soc">
+							<p class="text-soc">
+								Мы в социальных сетях:
+							</p>
+							<div class="soc-icons">
+								<a href="#" class="soc-icon soc-icon-vk"></a>
+								<a href="#" class="soc-icon soc-icon-fb"></a>
+								<a href="#" class="soc-icon soc-icon-lk"></a>
+							</div>
+						</div>
+						<a href="#" class="burger-adress burger-content">
+							<i class="burger-adress__icon"></i>
+							г. Москва, ул. Коптевская, <br>
+							д. 67, БЦ "Таволга"
+						</a>
+						<div class="order-block-burger burger-content">
+							<button class="order">
+								Заказать бесплатный осмотр
+							</button>
+						</div>
+					</div>
+					<div class="basket-wrap">
+						<div class="basket-block">
+							<a href="#" class="basket-link">
+								<i class="basket-icon"></i>
+								ваша корзина
+							</a>
+							<p class="basket-text">
+								В корзине 
+								<span>
+									(0)
+								</span>
+								товаров
+								<span>
+									(0)
+								</span>
+								<span class="rub">
+									&#8381;
+								</span>
+							</p>
+						</div>
+						<a href="#" class="email-link">
+							<i class="email-icon">
+							</i>
+							info@climate-1.ru
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="backgrond-window_first"></div>
+		<div class="menu-header-background">
+			<div class="container">
+				<ul class="list-menu">
+					<li class="list-menu__item">
+						<a href="#" class="list-menu__link">
+							<img src="img/main-page/icon-menu1.png" alt="" class="list-menu__image img-fluid">
+							<p class="list-menu__text">
+								Установка и монтаж
+							</p>
+						</a>
+					</li>
+					<li class="list-menu__item">
+						<a href="#" class="list-menu__link">
+							<img src="img/main-page/icon-menu2.png" alt="" class="list-menu__image img-fluid">
+							<p class="list-menu__text">
+								ФОТО НАШИХ МОНТАЖЕЙ
+							</p>
+						</a>
+					</li>
+					<li class="list-menu__item">
+						<a href="#" class="list-menu__link">
+							<img src="img/main-page/icon-menu3.png" alt="" class="list-menu__image img-fluid">
+							<p class="list-menu__text">
+								ОПЛАТА И ДОСТАВКА
+							</p>
+						</a>
+					</li>
+					<li class="list-menu__item">
+						<a href="#" class="list-menu__link">
+							<img src="img/main-page/icon-menu4.png" alt="" class="list-menu__image img-fluid">
+							<p class="list-menu__text">
+								КОНТАКТЫ
+							</p>
+						</a>
+					</li>
+					<li class="list-menu__item">
+						<a href="#" class="list-menu__link">
+							<img src="img/main-page/icon-menu5.png" alt="" class="list-menu__image img-fluid">
+							<p class="list-menu__text">
+								Отзывы
+							</p>
+						</a>
+					</li>
+					<li class="list-menu__item">
+						<a href="#" class="list-menu__link">
+							<img src="img/main-page/icon-menu6.png" alt="" class="list-menu__image img-fluid">
+							<p class="list-menu__text">
+								Кондиционеры оптом
+							</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="orange-menu-backhround">
+				<div class="container">
+					<ul class="orange-menu">
+						<li class="orange-menu__tab">
+							Посмотреть каталог
+							<i class="orange-menu__icon orange-menu__icon_tab"></i>
+						</li>
+						<li class="orange-menu__item">
+							<a href="" class="orange-menu__link">
+								<i class="orange-menu__icon orange-menu__icon_kon"></i>
+								КОНДИЦИОНЕРЫ
+							</a>
+						</li>
+						<li class="orange-menu__item">
+							<a href="" class="orange-menu__link">
+								<i class="orange-menu__icon orange-menu__icon_ot"></i>
+								ОТОПИТЕЛЬНОЕ ОБОРУДОВАНИЕ
+							</a>
+						</li>
+						<li class="orange-menu__item">
+							<a href="" class="orange-menu__link">
+								<i class="orange-menu__icon
+								orange-menu__icon_vh"></i>
+								воздух
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="backgrond-window_second"></div>
+	</header>
+<!--------- section-apr ------------------>
+	<section class="section-title-page section-title-page_apr">
+		<div class="container">
+			<div class="block-title-page">
+				<h2 class="title-page">
+					Каталог
+				</h2>
+				<div class="breadcrumbs">
+					<ul class="breadcrumbs-list">
+						<li class="breadcrumbs-list__item">
+							<a href="#" class="breadcrumbs-list__link">
+								Главная страница
+							</a>
+						</li>
+						<li class="breadcrumbs-list__item">
+							<a href="#" class="breadcrumbs-list__link">
+								Кондиционеры 
+							</a>
+						</li>
+						<li class="breadcrumbs-list__item">
+							Настенные Сплит-системы
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-product">
+		<div class="container">
+			<div class="wrap-product-content">
+				<div class="left-part-product">
+					<div class="slider-product">
+						<div class="slider-product-for">
+							<div class="slider-product-for__item">
+								<div class="slider-product-for__block-img">
+									<img src="img/katalog/catalog.png" alt="img">
+								</div>
+							</div>
+							<div class="slider-product-for__item">
+								<div class="slider-product-for__block-img">
+									<img src="img/katalog/catalog.png" alt="img">
+								</div>
+							</div>
+							<div class="slider-product-for__item">
+								<div class="slider-product-for__block-img">
+									<img src="img/katalog/catalog.png" alt="img">
+								</div>
+							</div>
+							<div class="slider-product-for__item">
+								<div class="slider-product-for__block-img">
+									<img src="img/katalog/catalog.png" alt="img">
+								</div>
+							</div>
+						</div>
+						<div class="slider-product-nav">
+							<div class="slider-product-nav__item">
+								<div class="slider-product-nav__block-img">
+									<img src="img/katalog/catalog-nav.png" alt="img">
+								</div>
+							</div>
+							<div class="slider-product-nav__item">
+								<div class="slider-product-nav__block-img">
+									<img src="img/katalog/catalog-nav.png" alt="img">
+								</div>
+							</div>
+							<div class="slider-product-nav__item">
+								<div class="slider-product-nav__block-img">
+									<img src="img/katalog/catalog-nav.png" alt="img">
+								</div>
+							</div>
+							<div class="slider-product-nav__item">
+								<div class="slider-product-nav__block-img">
+									<img src="img/katalog/catalog-nav.png" alt="img">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="sertifikat-product">
+						<a data-fancybox="gallery" href="img/katalog/cat-sertifikat.png">
+							<img src="img/katalog/cat-sertifikat.png" alt="" class="sertifikat-product__img">
+						</a>
+						<ul class="sertifikat-product__brends">
+							<li class="sertifikat-product__brend">
+								<img src="img/katalog/cat-brend.png" alt="img" class="sertifikat-product__img">
+							</li>
+							<li class="sertifikat-product__brend">
+								<img src="img/katalog/cat-brend.png" alt="img" class="sertifikat-product__img">
+							</li>
+							<li class="sertifikat-product__brend">
+								<img src="img/katalog/cat-brend.png" alt="img" class="sertifikat-product__img">
+							</li>
+							<li class="sertifikat-product__brend">
+								<img src="img/katalog/cat-brend.png" alt="img" class="sertifikat-product__img">
+							</li>
+							<li class="sertifikat-product__brend">
+								<img src="img/katalog/cat-brend.png" alt="img" class="sertifikat-product__img">
+							</li>
+							<li class="sertifikat-product__brend">
+								<img src="img/katalog/cat-brend.png" alt="img" class="sertifikat-product__img">
+							</li>
+							<li class="sertifikat-product__brend">
+								<img src="img/katalog/cat-brend.png" alt="img" class="sertifikat-product__img">
+							</li>
+							<li class="sertifikat-product__brend">
+								<img src="img/katalog/cat-brend.png" alt="img" class="sertifikat-product__img">
+							</li>
+							<li class="sertifikat-product__brend">
+								<img src="img/katalog/cat-brend.png" alt="img" class="sertifikat-product__img">
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="right-part-product">
+					<form action="#">
+						<div class="wrap-product-info">
+							<p class="type-product">
+								Кондиционер настенный
+							</p>
+							<h3 class="name-product">
+								Royal Clima RC-VR24HN
+							</h3>
+							<p class="model-product">
+								Модельный ряд: 
+								<span>
+									VELA
+								</span>
+							</p>
+							<div class="wrap-stock">
+								<div class="wrap-check-stock">
+									<input type="checkbox">
+									В наличии  
+								</div>
+								<div class="separator-stock">
+								</div>
+								<p class="articul">
+									Артикул: 
+									<span>103071</span>
+								</p>
+							</div>
+							<div class="wrap-price">
+								<p class="old-price">
+									15 590 руб.
+								</p>
+								<p class="discount">
+									Цена со скидкой:
+									<span>
+										13 100 руб.
+									</span>
+								</p>
+							</div>
+							<div class="sentence-product-fon">
+								<p class="sentence-product">
+									нашли дешевле - сделаем скидку
+								</p>
+							</div>
+							
+							<div class="wrap-buy-product">
+								<div class="wrap-link-buy">
+									<img src="img/katalog/lupa.png" class="img-fluid buy-product-img" alt="">
+									<a href="#" class="link-buy">
+										Бесплатный осмотр
+									</a>
+								</div>
+								<div class="block-buttons-buy">
+									<button class="click-buy">
+										Купить в 1 клик
+									</button>
+									<button class="buy">
+										<i class="icon-buy"></i>
+										Купить  
+									</button>
+								</div>
+							</div>
+							<div class="block-credit">
+								<div class="wrap-check-credit">
+									<label class="custom-radio-second check-credit">
+                                        <input type="checkbox">
+                                        <div></div>
+                                    </label>
+									<p class="credit-text">
+										Установка 
+										<span>
+											+ 6990 руб.
+										</span>
+									</p>
+								</div>
+								<div class="wrap-credit-button">
+									<button class="credit-button">
+										Купить в кредит
+									</button>
+								</div>
+							</div>
+							<div class="wrap-specifications">
+								<ul class="specifications-name">
+									<li class="specifications-name__item">
+										Рекомендуемая площадь  
+									</li>
+									<li class="specifications-name__item"> 
+										Мощность охлаждения  
+									</li>
+									<li class="specifications-name__item"> 
+										Мощность обогрева  
+									</li>
+									<li class="specifications-name__item"> 
+										Уровень шума  
+									</li>
+									<li class="specifications-name__item">
+										Тип кондиционера  
+									</li>
+								</ul>
+								<ul class="specifications-value">
+									<li class="specifications-value__item">
+										(м2) 20 В
+									</li>
+									<li class="specifications-value__item">
+										(Вт) 2100 В
+									</li>
+									<li class="specifications-value__item">
+										Вт) 2150 В
+									</li>
+									<li class="specifications-value__item">
+										21 ДБ
+									</li>
+									<li class="specifications-value__item">
+										Инверторный он/офф
+									</li>
+								</ul>
+							</div>
+							<div class="add-services">
+								<h3 class="add-services__title">
+									дополнительные
+									<span>
+										услуги 
+									</span>
+								</h3>
+								<ul class="add-services__list">
+									<li class="add-services__item">
+										<div class="add-services__wrap-check">
+											<label class="custom-radio-second add-services__check">
+		                                        <input type="checkbox">
+		                                        <div></div>
+		                                    </label>
+											Защитный козырек
+										</div>
+										<p class="add-services__price">
+											2 560 руб.
+										</p>
+									</li>
+									<li class="add-services__item">
+										<div class="add-services__wrap-check">
+											<label class="custom-radio-second add-services__check">
+		                                        <input type="checkbox">
+		                                        <div></div>
+		                                    </label>
+											Антивандальная решетка 
+										</div>
+										<p class="add-services__price">
+											1 500 руб.
+										</p>
+									</li>
+									<li class="add-services__item">
+										<div class="add-services__wrap-check">
+											<label class="custom-radio-second add-services__check">
+		                                        <input type="checkbox">
+		                                        <div></div>
+		                                    </label>
+											Расширенная гарантия
+										</div>
+										<p class="add-services__price">
+											3 300 руб.
+										</p>
+									</li>
+									<li class="add-services__item">
+										<div class="add-services__wrap-check">
+											<label class="custom-radio-second add-services__check">
+		                                        <input type="checkbox">
+		                                        <div></div>
+		                                    </label>
+											Стоимость
+										</div>
+										<p class="add-services__price">
+											2 560 руб.
+										</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="tabs-product" id="tabs-product">
+				<ul class='list-tabs'>
+				    <li class='list-tabs__item'>
+				    	<a href="#description-tab">
+					    	ОПИСАНИЕ
+					    </a>
+				    </li>
+				    <li class='list-tabs__item'>
+				    	<a href="#specifications-tab">
+					    	ХАРАКТЕРИСТИКА
+					    </a>
+				    </li>
+				</ul>
+				<div class="description-info" id="description-tab">
+				    <h5 class="description-info__title">
+				    	КОНДИЦИОНЕР HISENSE СЕРИИ SMART DC INVERTER
+				    </h5>
+				    <p class="description-info__text">
+				    	Серия SMART DC Inverter это современные инверторные сплит-системы с классом
+						энергоэффективности А.
+				    </p>
+				    <p class="description-info__text">
+						Основное отличие серии – это расширенный модельный ряд. Вместо стандартных для инверторов 4
+						моделей 9k, 12k, 18k, 24k предлагается 6 моделей 7k, 9k, 11k, 13k, 18k, 24k. Появление вместо модели
+						12k моделей 11k и 13k является принципиальным новшеством. Шаг холодопроизводительности в 0,5
+						кВт позволяет сделать выбор кондиционера намного более точным и экономичным.
+				    </p>
+				    <p class="description-info__text">
+						Сплит-системы серии SMART DC Inverter работают в диапазоне до 0°С в режиме охлаждения и до
+						-15°С в режиме обогрев, что является важным преимуществом для российских климатических
+						условий.
+				    </p>
+				    <p class="description-info__text">
+						Комплексная система очистки воздуха включает в себя обновленный фильтр высокого класса
+						очистки 
+						ULTRA Hi Density фильтр, который удаляет более 90% пыли и других частиц из воздуха в помещении,
+						и дополнительные: фотокаталитический фильтр и фильтр с ионами серебра, что позволяет
+						предотвращать появление микробов и бактерий.
+				    </p>
+				    <p class="description-info__text">
+						Все модели серии SMART DC Inverter имеют 4D AUTO-Air (автоматические горизонтальные и
+						вертикальные жалюзи), энергоэффективность класса А, функцию “I Feel” (Я ощущаю), которая
+						позволяет контролировать температуру непосредственно рядом с пользователем.
+				    </p>
+				    <!-- content -->
+				</div>
+				<div class="specifications-info" id="specifications-tab">
+				    <h5 class="description-info__title">
+				    	КОНДИЦИОНЕР HISENSE СЕРИИ SMART DC INVERTER
+				    </h5>
+				    <p class="description-info__text">
+				    	Серия SMART DC Inverter это современные инверторные сплит-системы с классом
+						энергоэффективности А.
+				    </p>
+				    <p class="description-info__text">
+						Основное отличие серии – это расширенный модельный ряд. Вместо стандартных для инверторов 4
+						моделей 9k, 12k, 18k, 24k предлагается 6 моделей 7k, 9k, 11k, 13k, 18k, 24k. Появление вместо модели
+						12k моделей 11k и 13k является принципиальным новшеством. Шаг холодопроизводительности в 0,5
+						кВт позволяет сделать выбор кондиционера намного более точным и экономичным.
+				    </p>
+				    <p class="description-info__text">
+						Сплит-системы серии SMART DC Inverter работают в диапазоне до 0°С в режиме охлаждения и до
+						-15°С в режиме обогрев, что является важным преимуществом для российских климатических
+						условий.
+				    </p>
+				</div>
+			</div>
+	</section>
+	<section class="section-other">
+		<div class="container">
+			<h3 class="title-other">
+				Другие модели 
+ 				<span>
+ 					этой серии
+ 				</span>
+			</h3>
+			<div class="slider-other">
+				<div class="slider-other__item">
+					<div class="slider-other__block">
+						<div class="slider-other__content">
+							<img src="img/katalog/other-img.png" alt="img" class="img-fluid slider-other__img">
+							<p class="slider-other__setup">
+								<span>
+									Установка  
+								</span>
+								+ 6 990 руб.
+							</p>
+							<p class="slider-other__info">
+								Кондиционер настенный
+								<span>
+									Royal Clima RC-VT22HN
+								</span>						
+								Модельный ряд: VISTA
+							</p>
+							<p class="slider-other__price">
+								12 200 руб.
+							</p>
+						</div>
+						<div class="block-buttons-buy slider-other__buttons-buy">
+							<button class="click-buy slider-other__click-buy">
+								Купить в 1 клик
+							</button>
+							<button class="buy slider-other__buy">
+								<i class="icon-buy slider-other__icon-buy"></i>
+								Купить  
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="slider-other__item">
+					<div class="slider-other__block">
+						<div class="slider-other__content">
+							<img src="img/katalog/other-img.png" alt="img" class="img-fluid slider-other__img">
+							<p class="slider-other__setup">
+								<span>
+									Установка  
+								</span>
+								+ 6 990 руб.
+							</p>
+							<p class="slider-other__info">
+								Кондиционер настенный
+								<span>
+									Royal Clima RC-VT22HN
+								</span>						
+								Модельный ряд: VISTA
+							</p>
+							<p class="slider-other__price">
+								12 200 руб.
+							</p>
+						</div>
+						<div class="block-buttons-buy slider-other__buttons-buy">
+							<button class="click-buy slider-other__click-buy">
+								Купить в 1 клик
+							</button>
+							<button class="buy slider-other__buy">
+								<i class="icon-buy slider-other__icon-buy"></i>
+								Купить  
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="slider-other__item">
+					<div class="slider-other__block">
+						<div class="slider-other__content">
+							<img src="img/katalog/other-img.png" alt="img" class="img-fluid slider-other__img">
+							<p class="slider-other__setup">
+								<span>
+									Установка  
+								</span>
+								+ 6 990 руб.
+							</p>
+							<p class="slider-other__info">
+								Кондиционер настенный
+								<span>
+									Royal Clima RC-VT22HN
+								</span>						
+								Модельный ряд: VISTA
+							</p>
+							<p class="slider-other__price">
+								12 200 руб.
+							</p>
+						</div>
+						<div class="block-buttons-buy slider-other__buttons-buy">
+							<button class="click-buy slider-other__click-buy">
+								Купить в 1 клик
+							</button>
+							<button class="buy slider-other__buy">
+								<i class="icon-buy slider-other__icon-buy"></i>
+								Купить  
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="slider-other__item">
+					<div class="slider-other__block">
+						<div class="slider-other__content">
+							<img src="img/katalog/other-img.png" alt="img" class="img-fluid slider-other__img">
+							<p class="slider-other__setup">
+								<span>
+									Установка  
+								</span>
+								+ 6 990 руб.
+							</p>
+							<p class="slider-other__info">
+								Кондиционер настенный
+								<span>
+									Royal Clima RC-VT22HN
+								</span>						
+								Модельный ряд: VISTA
+							</p>
+							<p class="slider-other__price">
+								12 200 руб.
+							</p>
+						</div>
+						<div class="block-buttons-buy slider-other__buttons-buy">
+							<button class="click-buy slider-other__click-buy">
+								Купить в 1 клик
+							</button>
+							<button class="buy slider-other__buy">
+								<i class="icon-buy slider-other__icon-buy"></i>
+								Купить  
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+	<footer class="footer">
+		<div class="footer-fon">
+			<div class="container">
+				<div class="footer-row">
+					<div class="footer-col">
+						<ul class="footer-list">
+							<li class="footer-list__title">
+								О компаниии
+							</li>
+							<li class="footer-list__item">
+								<a href="#" class="footer-list__link">
+									Наши статьи
+								</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="#" class="footer-list__link">
+									Заказы и возвраты
+								</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="#" class="footer-list__link">
+									Кондиционеры в Московской области
+								</a>
+							</li>
+							<li class="footer-list__item service-d">
+								<a href="#" class="footer-list__link">
+									Доставка и оплата
+								</a>
+							</li>
+						</ul>
+						<ul class="footer-list">
+							<li class="footer-list__title">
+								контакты
+							</li>
+							<li class="footer-list__item">
+								<a href="#" class="footer-list__link">
+									Наши контакты
+								</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="#" class="footer-list__link">
+									Карта сайта
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-col service-n">
+						<ul class="footer-list">
+							<li class="footer-list__title">
+								Обслуживание
+							</li>
+							<li class="footer-list__item">
+								<a href="#" class="footer-list__link">
+									Доставка и оплата
+								</a>
+							</li>
+						</ul>
+						<ul class="footer-list">
+							<li class="footer-list__title">
+								Обслуживание
+							</li>
+							<li class="footer-list__item">
+								<a href="#" class="footer-list__link">
+									Доставка и оплата
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<div class="footer-block">
+							<div class="phone-block phone-block-footer">
+								<a href="#" class="phone-link phone-link-footer">
+									<span>
+										+7 (495) 
+									</span>
+									199-14-91
+								</a>
+								<a href="#" class="phone-link phone-link-footer">
+									<span>
+										+7 (495) 
+									</span>
+									110-15-59
+								</a>
+							</div>
+							<div class="wrap-footer-btn">
+								<button class="footer-btn footer-btn-js-click">
+									заказать звонок
+								</button>
+								<div class="footer-btn-shadow"></div>
+							</div>
+							
+						</div>
+						<div class="footer-block">
+							<a href="#" class="footer-adress">
+								<i class="footer-adress__icon"></i>
+								г. Москва, ул. Коптевская, <br>
+								д. 67, БЦ "Таволга"
+							</a>
+							<div class="wrap-soc wrap-soc-footer">
+								<p class="text-soc text-soc-footer">
+									Мы в социальных сетях:
+								</p>
+								<div class="soc-icons">
+									<a href="#" class="soc-icon soc-icon-vk"></a>
+									<a href="#" class="soc-icon soc-icon-fb"></a>
+									<a href="#" class="soc-icon soc-icon-lk"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="footer-bottom-background">
+				<div class="container">
+					<div class="footer-bottom">
+						<p class="copyright">
+							 2018 Климат №1. Все права защищены.
+						</p>
+						<div class="footer-bottom-links">
+							<a href="#" class="footer-bottom-link">
+								Обратная связь      
+							</a>
+							<p class="separator-main">|</p>
+							<a href="#" class="footer-bottom-link">
+								Заказы и возвраты
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+	</footer>
+	<div id="overlay">
+		<div id="thx">
+			Спасибо! Мы обязательно вам перезвоним
+		</div>
+   	</div>
+
+	<div style="display: none;">
+	    <div class="box-modal-buy" id="exampleModal-buy">
+	        <div class="box-modal_close arcticmodal-close">
+	        </div>
+	        <h4 class="modal-buy-title">
+        		<span>
+        			Купить
+        		</span><br>
+				Royal Clima RC-VT22HN
+        	</h4>
+        	<form action="" class="modal-form">
+				<input type="text" placeholder="Ваш имя" class="modal-form__name">
+				<input type="tel" placeholder="Ваш телефон" class="modal-form__tel">
+				<div class="modal-form__wrap-btn">
+					<button class="modal-form__btn">
+						Заказать звонок
+					</button>
+				</div>
+			</form>
+	    </div>
+	</div>
+
+	<div style="display: none;">
+	    <div class="box-modal-busket" id="box-modal-busket">
+	        <div class="busket-modal_close  arcticmodal-close">
+	        </div>
+        	<div class="modal-busket-content">
+        		<h4 class="modal-busket-title">
+		    		Товар добавлен в корзину
+		    	</h4>
+		    	<div class="modal-busket-info">
+		    		<div class="wrap-img">
+		    			<img src="img/mobile-main-page/modal-img-busket.png" alt="img" class="img-fluid modal-busket-img">
+		    		</div>
+			    	<p class="modal-busket-name">
+			    		Кондиционер настенный
+			    	</p>
+			    	<p class="modal-busket-type">
+						Royal Clima RC-VT22HN
+			    	</p>
+			    	<p class="modal-busket-model">
+						Модельный ряд: VISTA
+			    	</p>
+			    	<p class="modal-busket-old-price">
+			    		14 490 руб.
+			    	</p>
+			    	<p class="modal-busket-price">
+			    		12 200 руб.
+			    	</p>
+			    	<div class="modal-check">
+			    		<label class="custom-radio-second">
+                            <input type="checkbox">
+                            <div></div>
+                        </label>
+			    		<p class="modal-check__text">
+			    			<span>
+			    				Установка
+			    			</span>
+			    			+ 6990 руб.
+			    		</p>
+			    	</div>
+		    	</div>
+        	</div>
+        	<div class="modal-wrap-btn">
+	    		<button class="modal-wrap-btn__busket">
+	    			Перейти в корзину
+	    			<i class="modal-wrap-btn__icon-busket"></i>
+	    		</button>
+	    		<button class="modal-wrap-btn__buy">
+	    			<i class="modal-wrap-btn__icon-buy">
+	    			</i>
+	    			Купить
+	    		</button>
+	    	</div>
+	    </div>
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script src="js/jquery.arcticmodal-0.3.min.js"></script>
+	<script src="js/parallax-bg.js"></script>
+	<script src="js/scripts.js"></script>
+	<script src="js/jquery.fullPage.js"></script>
+<!-- Табы -->
+	<script src="js/jquery.hashchange.js" type="text/javascript"></script>
+	<script src="js/jquery.easytabs.js" type="text/javascript"></script>
+	
+</body>
+</html>
+
