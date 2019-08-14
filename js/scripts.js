@@ -139,7 +139,7 @@ $(function () {
 	      }
 	    },
 	    {
-	      breakpoint: 550,
+	      breakpoint: 360,
 	      settings: {
 	      	centerMode: true,
 	        centerPadding: '0px',
@@ -162,7 +162,23 @@ $(function () {
 	  asNavFor: '.slider-product-for',
 	  centerMode: false,
 	  dots: false,
-	  focusOnSelect: true
+	  focusOnSelect: true,
+	  responsive: [
+	    {
+	      breakpoint: 950,
+	      settings: {
+	        slidesToShow: 3,
+	      }
+	    },
+	    {
+	      breakpoint: 445,
+	      settings: {
+	      	centerMode: true,
+	        centerPadding: '0px',
+	        slidesToShow: 2,
+	      }
+	    }
+	    ]
 	});
 
 	$('.slider-other').slick({
@@ -187,6 +203,15 @@ $(function () {
 	        centerPadding: '0px',
 	        slidesToShow: 2,
 	      }
+	    },
+	    {
+	      breakpoint: 450,
+	      settings: {
+	      	centerMode: true,
+	      	arrows : false,
+	        centerPadding: '0px',
+	        slidesToShow: 1,
+	      }
 	    }
 	  ]
 	 });
@@ -210,8 +235,30 @@ $(function () {
          var filename = $(this).val().replace(/.*\\/, "");
          $("#fl_nm").html(filename);
     });
+	
+	// сктрытие таблицы
+	$("#setting_chevron-desc").click(function() {
+		$("#setting_table").toggleClass("d-none");
+		$("#setting_chevron").toggleClass("setting_chevron-transform");
+	});
+
+	$("#setting_chevron").click(function() {
+		$("#setting_table").toggleClass("d-none");
+		$("#setting_chevron").toggleClass("setting_chevron-transform");
+	});
+
+    $("#setting_chevron-title").click(function() {
+		$("#setting_table").toggleClass("d-none");
+		$("#setting_chevron").toggleClass("setting_chevron-transform");
+	});
 });
 
 
-
+// перемещение блоков при адаптации
+$(window).on('load resize', function(){
+  if ($(window).width() <= 980) {
+    $('#banners').insertAfter('#line-catalog');
+    $('#sertifikat-product').insertAfter('#right-part-product form');
+  }
+});
 

@@ -57,7 +57,14 @@ button:hover {
 input::-webkit-input-placeholder {
 	color: #000;
 	outline: none;
+	font-size: 18px;
 } 
+
+textarea::-webkit-input-placeholder  {
+	color: #000;
+	outline: none;
+	font-size: 18px;
+}
 
 input {
 	outline: none;
@@ -1011,7 +1018,7 @@ label.custom-radio-second input:checked+div {
 	background-size: 100% 100%;
 	width: 100%;
 	height: 50px;
-	max-width: 204px;
+	max-width: 180px;
 }
 
 .logo-text span,
@@ -1613,7 +1620,8 @@ label.custom-radio-second input:checked+div {
 }
 
 .footer-bottom-background {
-	background: #0076a8;	
+	background: #0076a8;
+	margin-top: -4px;	
 }
 
 
@@ -1703,8 +1711,9 @@ label.custom-radio-second input:checked+div {
 
 /*-------------main-info-section-------------------*/
 
-.main-info-section {
+.main-info-section-top {
 	margin: 40px 0;
+	overflow: hidden;
 }
 
 .title-section {

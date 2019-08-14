@@ -317,17 +317,21 @@
 	<!--forms and map-->
 	<section>
 		<div class="container">
-			<div class="contacts-forms">
-				<form action="">
-					<p class="contacts-form-p">Пишите нам</p>
-					<input class="contacts-input" type="text" name="name" placeholder="Ваше имя">
-					<input class="contacts-input" type="text" name="phone" placeholder="Телефон">
-					<input class="contacts-input" type="text" name="email" placeholder="E-mail">
-					<textarea class="contacts-textarea" name="textarea" placeholder="Комментарий" cols="30" rows="10"></textarea>
-					<input class="contacts-button" type="button" value="Отправить">
-				</form>
+			<div class="wrap-form-cart">
+				<div class="contacts-forms">
+					<form action="">
+						<p class="contacts-form-p">Пишите нам</p>
+						<input class="contacts-input" type="text" name="name" placeholder="Ваше имя">
+						<input class="contacts-input" type="text" name="phone" placeholder="Телефон">
+						<input class="contacts-input" type="text" name="email" placeholder="E-mail">
+						<textarea class="contacts-textarea" name="textarea" placeholder="Комментарий" cols="30" rows="10"></textarea>
+						<input class="contacts-button" type="button" value="Отправить">
+					</form>
+				</div>
+				<div class="map" id="map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8163508.467086336!2d26.603416398276682!3d46.240644258222545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe303fd08468f%3A0xa1cf3d5f2c11aba!2z0JTQvdC40L_RgNC-LCDQlNC90LXQv9GA0L7Qv9C10YLRgNC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNDkwMDA!5e0!3m2!1sru!2sua!4v1565706833425!5m2!1sru!2sua" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
 			</div>
-			<div class="map" id="map"></div>
 		</div>
 	</section>
 	<section>
@@ -539,28 +543,6 @@
 	<script src="js/scripts.js"></script>
 	<script src="js/jquery.fullPage.js"></script>
 	<script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript"> </script>
-<script type="text/javascript">
-	ymaps.ready(init);
-
-function init () {
-    var myMap = new ymaps.Map('map', {
-            center: [55.8567055, 37.530771],
-            zoom: 14
-        }),
-
-        myPlacemark1 = new ymaps.Placemark([55.856705,  37.530771], {
-            balloonContent: 'Маленькая иконка'
-        }, {
-            iconLayout: 'default#image',
-            iconImageClipRect: [[0,0], [91, 91]],
-            iconImageHref: 'img/contacts/metka.png',
-            iconImageSize: [91, 91],
-            iconImageOffset: [-91, -91],
-        });
-
-    myMap.geoObjects.add(myPlacemark1);
-}
-</script>
 </body>
-</html>55.856705, 37.530771
+</html>
 

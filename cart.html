@@ -521,38 +521,44 @@
                                 <input class="shopping_number" type="tel" name="NUMBER" placeholder="Телефон">
                                 <input class="shopping_email" type="email" name="EMAIL" placeholder="E-mail">
                             </form>
-                            <div class="shopping_radio-buttons">
+                            <form action="#">
+                                <div class="shopping_radio-buttons">
                                 <div class="shopping_item">
-                                    <label class="custom-check"><input type="checkbox"><div></div></label>
+                                    <label class="custom-check"><input type="radio" name="r1"><div></div></label>
                                     <div class="shopping_title-bold">Юр.лицо</div>
                                 </div>
                                 <div class="shopping_item">
-                                    <label class="custom-check"><input type="checkbox"><div></div></label>
+                                    <label class="custom-check"><input type="radio" name="r1"><div></div></label>
                                     <div class="shopping_title-bold">Физ.лицо</div>
                                 </div>
                             </div>
+                            </form>
+                            
                         </div>
 
                     </div>
                     <div class="shopping_inner">
                         <div class="shopping_info-block shopping_info-block__delivery">
                             <h2 class="h2">3. Доставка</h2>
-                            <div class="shopping_radio-buttons">
-                                <div class="shopping_item">
-                                    <label class="custom-check"><input type="checkbox"><div></div></label>
-                                    <div class="shopping_title-bold">Самовывоз</div>
+                            <form action="#">
+                                <div class="shopping_radio-buttons">
+                                    <div class="shopping_item">
+                                        <label class="custom-check"><input type="radio" name="r2"><div></div></label>
+                                        <div class="shopping_title-bold">Самовывоз</div>
+                                    </div>
+                                    <div class="shopping_item">
+                                        <label class="custom-check"><input type="radio" name="r2"><div></div></label>
+                                        <div class="shopping_title-bold">Доставка</div>
+                                    </div>
                                 </div>
-                                <div class="shopping_item">
-                                    <label class="custom-check"><input type="checkbox"><div></div></label>
-                                    <div class="shopping_title-bold">Доставка</div>
-                                </div>
-                            </div>
+                            </form>
+                            
                             <form action="#" method="POST" id="form-submit-delivery">
                                 <input class="shopping_name" type="text" name="City" placeholder="Город">
                                 <input class="shopping_name" type="text" name="Street" placeholder="Улица">
                                 <input class="shopping_number" type="number" name="NUMBER" placeholder="Номер дома">
                                 <input class="shopping_number" type="number" name="NUMBER" placeholder="Квартира">
-                                <textarea name="COMMENT" id="comment-field" rows="4" placeholder="Комментарий"></textarea>
+                                <textarea class="textarea-coment" name="COMMENT" id="comment-field" rows="4" placeholder="Комментарий"></textarea>
                             </form>
                         </div>
                         <div class="button">

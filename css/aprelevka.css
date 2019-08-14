@@ -164,6 +164,11 @@
 	background-color: #00a1cf;
 }
 
+.tipe-list__block-name:active {
+	color: #fff;
+	background-color: #00a1cf;
+}
+
 .tipe-list__linkCategory {
 	width: 30%;
 	min-width: 280px;
@@ -185,7 +190,8 @@
 	color: #fff;
 }
 
-.tipe-list__linkCategory:hover {
+.tipe-list__linkCategory:hover,
+.tipe-list__linkCategory:active {
 	color: #fff;
 }
 
@@ -196,4 +202,8 @@
 	width: 23px;
 	height: 20px;
 	margin-left: 15px;	
+}
+
+@media screen and (max-width: 900px) { 
+
 }

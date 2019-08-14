@@ -28,7 +28,9 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/aprelevka.css">
 	<link rel="stylesheet" href="css/town.css">
+	<link rel="stylesheet" href="css/сatalog-list.css">
 	<link rel="stylesheet" href="css/catalog.css">
+
 	<!-- Media Queries CSS -->
 	<link rel="stylesheet" href="css/media.css">
 
@@ -279,22 +281,22 @@
 						<div class="slider-product-for">
 							<div class="slider-product-for__item">
 								<div class="slider-product-for__block-img">
-									<img src="img/katalog/catalog.png" alt="img">
+									<img src="img/katalog/catalog.png" alt="img" class="img-fluid">
 								</div>
 							</div>
 							<div class="slider-product-for__item">
 								<div class="slider-product-for__block-img">
-									<img src="img/katalog/catalog.png" alt="img">
+									<img src="img/katalog/catalog.png" alt="img" class="img-fluid">
 								</div>
 							</div>
 							<div class="slider-product-for__item">
 								<div class="slider-product-for__block-img">
-									<img src="img/katalog/catalog.png" alt="img">
+									<img src="img/katalog/catalog.png" alt="img" class="img-fluid">
 								</div>
 							</div>
 							<div class="slider-product-for__item">
 								<div class="slider-product-for__block-img">
-									<img src="img/katalog/catalog.png" alt="img">
+									<img src="img/katalog/catalog.png" alt="img" class="img-fluid">
 								</div>
 							</div>
 						</div>
@@ -321,7 +323,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="sertifikat-product">
+					<div class="sertifikat-product" id="sertifikat-product">
 						<a data-fancybox="gallery" href="img/katalog/cat-sertifikat.png">
 							<img src="img/katalog/cat-sertifikat.png" alt="" class="sertifikat-product__img">
 						</a>
@@ -356,7 +358,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="right-part-product">
+				<div class="right-part-product" id="right-part-product">
 					<form action="#">
 						<div class="wrap-product-info">
 							<p class="type-product">
@@ -373,7 +375,10 @@
 							</p>
 							<div class="wrap-stock">
 								<div class="wrap-check-stock">
-									<input type="checkbox">
+									<label class="custom-radio-second check-stock">
+                                        <input type="checkbox">
+                                        <div></div>
+                                    </label>
 									В наличии  
 								</div>
 								<div class="separator-stock">
@@ -612,136 +617,220 @@
 			</h3>
 			<div class="slider-other">
 				<div class="slider-other__item">
-					<div class="slider-other__block">
-						<div class="slider-other__content">
-							<img src="img/katalog/other-img.png" alt="img" class="img-fluid slider-other__img">
-							<p class="slider-other__setup">
-								<span>
-									Установка  
-								</span>
-								+ 6 990 руб.
-							</p>
-							<p class="slider-other__info">
-								Кондиционер настенный
-								<span>
-									Royal Clima RC-VT22HN
-								</span>						
-								Модельный ряд: VISTA
-							</p>
-							<p class="slider-other__price">
-								12 200 руб.
-							</p>
+					<div class="slider-other__wrap">
+						<div class="slider-other__block">
+							<div class="slider-other__content">
+								<img src="img/katalog/other-img.png" alt="img" class="img-fluid slider-other__img">
+								<p class="slider-other__setup">
+									<span>
+										Установка  
+									</span>
+									+ 6 990 руб.
+								</p>
+								<p class="slider-other__info">
+									Кондиционер настенный
+									<span>
+										Royal Clima RC-VT22HN
+									</span>						
+									Модельный ряд: VISTA
+								</p>
+								<p class="slider-other__price">
+									12 200 руб.
+								</p>
+							</div>
+							<div class="block-buttons-buy slider-other__buttons-buy">
+								<button class="click-buy slider-other__click-buy">
+									Купить в 1 клик
+								</button>
+								<button class="buy slider-other__buy">
+									<i class="icon-buy slider-other__icon-buy"></i>
+									Купить  
+								</button>
+							</div>
 						</div>
-						<div class="block-buttons-buy slider-other__buttons-buy">
-							<button class="click-buy slider-other__click-buy">
-								Купить в 1 клик
-							</button>
-							<button class="buy slider-other__buy">
-								<i class="icon-buy slider-other__icon-buy"></i>
-								Купить  
-							</button>
-						</div>
-					</div>
+					</div>	
 				</div>
 				<div class="slider-other__item">
-					<div class="slider-other__block">
-						<div class="slider-other__content">
-							<img src="img/katalog/other-img.png" alt="img" class="img-fluid slider-other__img">
-							<p class="slider-other__setup">
-								<span>
-									Установка  
-								</span>
-								+ 6 990 руб.
-							</p>
-							<p class="slider-other__info">
-								Кондиционер настенный
-								<span>
-									Royal Clima RC-VT22HN
-								</span>						
-								Модельный ряд: VISTA
-							</p>
-							<p class="slider-other__price">
-								12 200 руб.
-							</p>
+					<div class="slider-other__wrap">
+						<div class="slider-other__block">
+							<div class="slider-other__content">
+								<img src="img/katalog/other-img.png" alt="img" class="img-fluid slider-other__img">
+								<p class="slider-other__setup">
+									<span>
+										Установка  
+									</span>
+									+ 6 990 руб.
+								</p>
+								<p class="slider-other__info">
+									Кондиционер настенный
+									<span>
+										Royal Clima RC-VT22HN
+									</span>						
+									Модельный ряд: VISTA
+								</p>
+								<p class="slider-other__price">
+									12 200 руб.
+								</p>
+							</div>
+							<div class="block-buttons-buy slider-other__buttons-buy">
+								<button class="click-buy slider-other__click-buy">
+									Купить в 1 клик
+								</button>
+								<button class="buy slider-other__buy">
+									<i class="icon-buy slider-other__icon-buy"></i>
+									Купить  
+								</button>
+							</div>
 						</div>
-						<div class="block-buttons-buy slider-other__buttons-buy">
-							<button class="click-buy slider-other__click-buy">
-								Купить в 1 клик
-							</button>
-							<button class="buy slider-other__buy">
-								<i class="icon-buy slider-other__icon-buy"></i>
-								Купить  
-							</button>
-						</div>
-					</div>
+					</div>	
 				</div>
 				<div class="slider-other__item">
-					<div class="slider-other__block">
-						<div class="slider-other__content">
-							<img src="img/katalog/other-img.png" alt="img" class="img-fluid slider-other__img">
-							<p class="slider-other__setup">
-								<span>
-									Установка  
-								</span>
-								+ 6 990 руб.
-							</p>
-							<p class="slider-other__info">
-								Кондиционер настенный
-								<span>
-									Royal Clima RC-VT22HN
-								</span>						
-								Модельный ряд: VISTA
-							</p>
-							<p class="slider-other__price">
-								12 200 руб.
-							</p>
+					<div class="slider-other__wrap">
+						<div class="slider-other__block">
+							<div class="slider-other__content">
+								<img src="img/katalog/other-img.png" alt="img" class="img-fluid slider-other__img">
+								<p class="slider-other__setup">
+									<span>
+										Установка  
+									</span>
+									+ 6 990 руб.
+								</p>
+								<p class="slider-other__info">
+									Кондиционер настенный
+									<span>
+										Royal Clima RC-VT22HN
+									</span>						
+									Модельный ряд: VISTA
+								</p>
+								<p class="slider-other__price">
+									12 200 руб.
+								</p>
+							</div>
+							<div class="block-buttons-buy slider-other__buttons-buy">
+								<button class="click-buy slider-other__click-buy">
+									Купить в 1 клик
+								</button>
+								<button class="buy slider-other__buy">
+									<i class="icon-buy slider-other__icon-buy"></i>
+									Купить  
+								</button>
+							</div>
 						</div>
-						<div class="block-buttons-buy slider-other__buttons-buy">
-							<button class="click-buy slider-other__click-buy">
-								Купить в 1 клик
-							</button>
-							<button class="buy slider-other__buy">
-								<i class="icon-buy slider-other__icon-buy"></i>
-								Купить  
-							</button>
-						</div>
-					</div>
+					</div>	
 				</div>
 				<div class="slider-other__item">
-					<div class="slider-other__block">
-						<div class="slider-other__content">
-							<img src="img/katalog/other-img.png" alt="img" class="img-fluid slider-other__img">
-							<p class="slider-other__setup">
-								<span>
-									Установка  
-								</span>
-								+ 6 990 руб.
-							</p>
-							<p class="slider-other__info">
-								Кондиционер настенный
-								<span>
-									Royal Clima RC-VT22HN
-								</span>						
-								Модельный ряд: VISTA
-							</p>
-							<p class="slider-other__price">
-								12 200 руб.
-							</p>
+					<div class="slider-other__wrap">
+						<div class="slider-other__block">
+							<div class="slider-other__content">
+								<img src="img/katalog/other-img.png" alt="img" class="img-fluid slider-other__img">
+								<p class="slider-other__setup">
+									<span>
+										Установка  
+									</span>
+									+ 6 990 руб.
+								</p>
+								<p class="slider-other__info">
+									Кондиционер настенный
+									<span>
+										Royal Clima RC-VT22HN
+									</span>						
+									Модельный ряд: VISTA
+								</p>
+								<p class="slider-other__price">
+									12 200 руб.
+								</p>
+							</div>
+							<div class="block-buttons-buy slider-other__buttons-buy">
+								<button class="click-buy slider-other__click-buy">
+									Купить в 1 клик
+								</button>
+								<button class="buy slider-other__buy">
+									<i class="icon-buy slider-other__icon-buy"></i>
+									Купить  
+								</button>
+							</div>
 						</div>
-						<div class="block-buttons-buy slider-other__buttons-buy">
-							<button class="click-buy slider-other__click-buy">
-								Купить в 1 клик
-							</button>
-							<button class="buy slider-other__buy">
-								<i class="icon-buy slider-other__icon-buy"></i>
-								Купить  
-							</button>
-						</div>
-					</div>
+					</div>	
 				</div>
 			</div>
 		</div>
 		
+	</section>
+	<section class="mob-category-serf">
+		<div class="container">
+			<div class="line-catalog line-catalog-mob" id="line-catalog"></div>
+			<div class="row banners" id="banners">
+				<div class="col-6 col-lg-12">
+					<div class="catalog-banners">
+						<p class="banners-title banners-title-1">Монтаж кондиционеров</p>
+						<img src="img/catalog-list/banner-1.jpg" class="img-banners img-fluid" alt="banners">
+						<a class="banners-link" href="#">Подробнее</a>
+					</div>
+				</div>
+				<div class="col-6 col-lg-12">
+					<div class="catalog-banners">
+						<p class="banners-title banners-title-2">Распродажа кондиционеров</p>
+						<img src="img/catalog-list/banner-2.jpg" class="img-banners" alt="banners">
+						<a class="banners-link" href="#">Подробнее</a>
+					</div>
+				</div>
+				<div class="col-6 col-lg-12">
+					<div class="catalog-banners">
+						<p class="banners-title banners-title-3">Кондиционеры в подмосковье</p>
+						<img src="img/catalog-list/banner-3.jpg" class="img-banners" alt="banners">
+						<a class="banners-link" href="#">Подробнее</a>
+					</div>	
+				</div>
+				<div class="col-6 col-lg-12">
+					<div class="catalog-banners">
+						<p class="banners-title banners-title-4">Кондиционеры на карте москвы</p>
+						<img src="img/catalog-list/banner-4.jpg" class="img-banners" alt="banners">
+						<a class="banners-link" href="#">Подробнее</a>
+					</div>
+				</div>
+			</div>
+			<div class="line-catalog line-catalog-mob" id="line-catalog"></div> 
+	        <p class="catalog-text">
+               Кондиционер следует выбирать и устанавливать заранее, не дожидаясь летнего зноя. Так можно сэкономить значительную сумму, особенно, если выполнить монтаж самостоятельно. Чтобы оборудование работало без сбоев, установка кондиционера своими руками должна производиться строго по инструкции, в подходящем для этого месте. Несоответствие технических условий или неправильный подбор деталей приведут к быстрой поломке сплит-системы			        	
+	        </p>
+		</div>
+	</section>
+	<section class="slider-sertificat page-catalog" id="slider-sertificat">
+		<div class="container">
+			<h2 class="title-section">
+				<span>ДИПЛОМЫ И</span> СЕРТИФИКАТЫ
+			</h2>
+			<p class="subtitle">
+				официальный дилер
+			</p>
+			<div class="sertificat-list">
+				<div class="sertificat-list__item">
+					<a data-fancybox="gallery" href="img/main-page/diplom.png" class="sertificat-list__fansybox">
+						<img src="img/main-page/diplom.png" alt="img" class="sertificat-list__img img-fluid">
+					</a>
+				</div>
+				<div class="sertificat-list__item">
+					<a data-fancybox="gallery" href="img/main-page/diplom2.png" class="sertificat-list__fansybox">
+						<img src="img/main-page/diplom2.png" alt="img" class="sertificat-list__img img-fluid">
+					</a>
+				</div>
+				<div class="sertificat-list__item">
+					<a data-fancybox="gallery" href="img/main-page/diplom3.png" class="sertificat-list__fansybox">
+						<img src="img/main-page/diplom3.png" alt="img" class="sertificat-list__img img-fluid">
+					</a>
+				</div>
+				<div class="sertificat-list__item">
+					<a data-fancybox="gallery" href="img/main-page/diplom4.png" class="sertificat-list__fansybox">
+						<img src="img/main-page/diplom4.png" alt="img" class="sertificat-list__img img-fluid">
+					</a>
+				</div>
+				<div class="sertificat-list__item">
+					<a  data-fancybox="gallery" href="img/main-page/diplom2.png" class="sertificat-list__fansybox">
+						<img src="img/main-page/diplom2.png" alt="img" class="sertificat-list__img img-fluid">
+					</a>
+				</div>
+			</div>
+		</div>
 	</section>
 	<footer class="footer">
 		<div class="footer-fon">

@@ -16,9 +16,14 @@
 
 @media screen and (max-width: 992px) {
 
+	.footer-adress {
+		justify-content: center;
+	}
+
 	.title-section,
 	.title-progress {
-		font-size: 26px;
+		font-size: 41px;
+		color: #003c4e;
 	}
 
 	.order-block {
@@ -99,7 +104,7 @@
 		background: url(../img/mobile-main-page/shopping-cart.png) no-repeat;
 		background-position: center;
 		background-size: 100%;
-		width: 65px;
+		width: 45px;
 		height: 65px;
 	}
 
@@ -339,9 +344,9 @@
 		margin-top: 0;
 	}
 
-	.main-info-section {
+	/*.main-info-section-top {
 		padding: 0 15px;
-	}
+	}*/
 
 	.info-main {
 		-webkit-flex-direction: column;
@@ -380,6 +385,10 @@
 	.apr-top__img {
 	    left: auto;
 	    right: 27px;
+	}
+
+	.block-title-page:after {
+		width: 100%;
 	}
 }
 
@@ -497,7 +506,8 @@
 
 @media screen and (max-width: 679px) {
 	.info-main__image {
-		height: 406px;
+		height: 327px;
+		margin-left: 25px;
 	}
 
 	.info-main__text_color {
@@ -514,7 +524,7 @@
 		background: url(../img/mobile-main-page/mobile-fon6.png) no-repeat;
 		background-size: 100% 100%;
 		background-position: center;
-		height: 1180px;
+		height: 870px;
 	}
 	
 	.progress-list__item {
@@ -531,23 +541,70 @@
 	    margin-right: 0;
 	}
 
+	.trigers{
+		background: url(../img/mobile-main-page/fon-trigers-mob.png) no-repeat;
+		background-size: cover;
+		overflow: hidden;
+		padding-top: 85px;
+	}
+
+	.phone-block-footer {
+		width: 266px;
+	}
+
+	.phone-link-footer {
+		font-size: 27px;
+	}
+
 }
 
 /* 320-576 .col */
 @media screen and (max-width: 576px) {
-	
+	.info-main__text,
+	.info-main__title {
+		margin: 0 10px;
+	}
+
+	.info-main__text.info-main__text_color {
+		margin: 0;
+	}
+
+	.progress-list {
+		margin-top: 50px;
+	}
+
+	.progress-list__item {
+		margin-bottom: 30px;
+	}
+
+	.sertificat-list__fansybox img {
+		max-width: 90%;
+	}
 }
 
 
 @media screen and (max-width: 500px) {
 
-	
+	.subtitle-apr-first {
+		font-size: 22px;
+	}
+
+	.apr-phone span {
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	.apr-phone .separator-phone {
+		display: none;
+	}
+
+
 }
 
 @media screen and (max-width: 450px) {
-	.sertificat-list__fansybox img {
+	/*.sertificat-list__fansybox img {
 		max-width: 100%;
-	}
+	}*/
 }
 
 @media screen and (max-width: 400px) {
@@ -557,5 +614,11 @@
 
 	.basket-icon {
 		width: 40px;
+	}
+}
+
+@media screen and (max-width: 370px) { 
+	.info-main__text.info-main__text_color {
+		margin-top: -20px;
 	}
 }
